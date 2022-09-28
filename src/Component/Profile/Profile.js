@@ -50,12 +50,17 @@ const Profile = () => {
       <div>
         <h3>Exercise Details</h3>
         <div className="exercise-time">
-            <h4>Exercise time</h4>
+          <h4>Exercise time</h4>
         </div>
         <br></br>
         <div className="break-time">
-            <h4>Break time</h4>
+          <h4>Break time</h4>
         </div>
+        <br></br>
+      </div>
+      
+      <div className="activity-complete">
+        <button type="">Activity Completed</button>
       </div>
     </div>
   );

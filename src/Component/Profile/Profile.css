@@ -56,3 +56,18 @@
     padding: 20px 20px 20px 0;
     border-radius: 10px;
 }
+
+.activity-complete button{
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: large;
+    color: blue;
+    font-weight: bold;
+    border: none;
+}
+.activity-complete button:hover{
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+}
