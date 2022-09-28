@@ -10,7 +10,6 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <h2>Select your package</h2>
       <Packages></Packages>
       
     </div>

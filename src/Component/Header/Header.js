@@ -6,11 +6,11 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="header">
-      <button>
+      <a href="/header">
         <FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon> Modern Fitness
         Zone
-      </button>
-      <div>
+      </a>
+      <div className="menu-item">
         <a href="/trainning">Trainning</a>
         <a href="/packages">Packages</a>
         <a href="/about">About</a>

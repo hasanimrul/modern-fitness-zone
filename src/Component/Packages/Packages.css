@@ -6,8 +6,8 @@
 .package-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
-    margin: 50px;
+    gap: 30px;
+    margin: 60px;
 }
 
 .profile-container{
