@@ -6,7 +6,7 @@ import "./Profile.css";
 
 const Profile = () => {
   return (
-    <div>
+    <div className="profile">
       <div className="user-info">
         <img src={img} alt="" />
         <div>
@@ -34,6 +34,27 @@ const Profile = () => {
             25<small>yrs</small>
           </h3>
           <p>Age</p>
+        </div>
+      </div>
+
+      <div>
+        <h3>Add a break</h3>
+        <div className="add-a-break">
+          <button>10m</button>
+          <button>20m</button>
+          <button>30m</button>
+          <button>40m</button>
+        </div>
+      </div>
+
+      <div>
+        <h3>Exercise Details</h3>
+        <div className="exercise-time">
+            <h4>Exercise time</h4>
+        </div>
+        <br></br>
+        <div className="break-time">
+            <h4>Break time</h4>
         </div>
       </div>
     </div>
