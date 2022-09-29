@@ -3,18 +3,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import img from "../../images/img.png";
 import "./Profile.css";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
+import Toast from "../Toast/Toast";
 
 const Profile = (props) => {
   const [breakTime, setBreakTime] = useState();
   const { cart } = props;
 
-  useEffect( () =>{
-    const lsData = localStorage.getItem('break-time')
-    setBreakTime(lsData)
-  }, [])
-  
+  useEffect(() => {
+    const lsData = localStorage.getItem("break-time");
+    setBreakTime(lsData);
+  }, []);
 
   let totalTime = 0;
   for (const course of cart) {
@@ -23,15 +22,12 @@ const Profile = (props) => {
 
   const showBreakTime = (time) => {
     setBreakTime(time);
-    localStorage.setItem('break-time', time);
+    localStorage.setItem("break-time", time);
   };
+
   
   
-  
-  
-  function App(){
-    const notify = () => toast("Wow so easy!");
-  }
+
   return (
     <div className="profile">
       <div className="user-info">
@@ -86,9 +82,7 @@ const Profile = (props) => {
         <br></br>
       </div>
 
-      <div className="activity-complete">
-        <button >Activity Completed</button>
-      </div>
+      <Toast></Toast>
     </div>
   );
 };
