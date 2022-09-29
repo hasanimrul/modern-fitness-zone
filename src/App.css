@@ -38,7 +38,7 @@
   }
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 500px) {
   .App {
     background-color: #000000;
     color:#ffffff;
