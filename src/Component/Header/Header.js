@@ -11,9 +11,7 @@ const Header = () => {
         Zone
       </a>
       <div className="menu-item">
-        <a href="/trainning">Trainning</a>
-        <a href="/packages">Packages</a>
-        <a href="/about">About</a>
+        <a href="blog.html">Blog</a>
       </div>
     </div>
   );
