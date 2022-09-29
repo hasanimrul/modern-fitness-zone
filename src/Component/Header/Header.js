@@ -10,9 +10,6 @@ const Header = () => {
         <FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon> Modern Fitness
         Zone
       </a>
-      <div className="menu-item">
-        <a href="blog.html">Blog</a>
-      </div>
     </div>
   );
 };
