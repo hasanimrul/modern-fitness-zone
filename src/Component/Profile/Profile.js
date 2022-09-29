@@ -1,13 +1,33 @@
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import img from "../../images/img.png";
+import { getFromLs, storeInLS } from "../../utilities/fakedb";
 import "./Profile.css";
 
 const Profile = (props) => {
+  const [breakTime, setBreakTime] = useState();
+  const { cart } = props;
+  
+  useEffect( () =>{
+    const lsData = localStorage.getItem('break-time')
+    setBreakTime(lsData)
+  }, [])
+  
+
+  let totalTime = 0;
+  for (const course of cart) {
+    totalTime = totalTime + course.time;
+  }
+
+  const showBreakTime = (time) => {
+    setBreakTime(time);
+    localStorage.setItem('break-time', time);
+  };
+  
+
   return (
     <div className="profile">
-      <h2>Selected items: {props.cart.length}</h2>
       <div className="user-info">
         <img src={img} alt="" />
         <div>
@@ -41,25 +61,25 @@ const Profile = (props) => {
       <div>
         <h3>Add a break</h3>
         <div className="add-a-break">
-          <button>10m</button>
-          <button>20m</button>
-          <button>30m</button>
-          <button>40m</button>
+          <button onClick={() => showBreakTime(10)}>10m</button>
+          <button onClick={() => showBreakTime(20)}>20m</button>
+          <button onClick={() => showBreakTime(30)}>30m</button>
+          <button onClick={() => showBreakTime(40)}>40m</button>
         </div>
       </div>
 
       <div>
         <h3>Exercise Details</h3>
         <div className="exercise-time">
-          <h4>Exercise time:</h4>
+          <h4>Exercise time: {totalTime}m</h4>
         </div>
         <br></br>
         <div className="break-time">
-          <h4>Break time</h4>
+          <h4>Break time: {breakTime}m </h4>
         </div>
         <br></br>
       </div>
-      
+
       <div className="activity-complete">
         <button type="">Activity Completed</button>
       </div>

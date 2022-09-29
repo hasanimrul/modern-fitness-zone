@@ -13,22 +13,6 @@ const Packages = () => {
       .then((data) => setdatas(data));
   }, []);
 
-  //   useEffect( () =>{
-  //     const storedCart = getStoredCart();
-  //     const savedCart = [];
-  //     for(const id in storedCart){
-  //         const addedProduct = products.find(product => product.id === id)
-  //         if(addedProduct){
-  //             savedCart.push(addedProduct);
-  //             const quantity = storedCart[id];
-  //             addedProduct.quantity = quantity;
-  //         }
-  //     }
-  //     setCart(savedCart);
-  // } , [products])
-  // useEffect(() => {
-
-  // }, []);
 
   const handleSelectedPackages = (packages) =>{
     console.log(packages);
