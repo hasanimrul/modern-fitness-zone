@@ -13,3 +13,43 @@
 .profile-container{
     background-color: rgb(43, 42, 42);
 }
+
+@media only screen and (max-width: 768px) {
+    .packages-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .package-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .packages-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .package-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
+
+  @media only screen and (min-width: 1224px) {
+    .packages-container{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    
+    .package-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 60px;
+    }
+  }
+
+  
+
+  

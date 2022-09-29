@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import img from "../../images/img.png";
 import "./Profile.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Profile = (props) => {
   const [breakTime, setBreakTime] = useState();
@@ -24,7 +26,12 @@ const Profile = (props) => {
     localStorage.setItem('break-time', time);
   };
   
-
+  
+  
+  
+  function App(){
+    const notify = () => toast("Wow so easy!");
+  }
   return (
     <div className="profile">
       <div className="user-info">
@@ -80,7 +87,7 @@ const Profile = (props) => {
       </div>
 
       <div className="activity-complete">
-        <button type="">Activity Completed</button>
+        <button >Activity Completed</button>
       </div>
     </div>
   );
