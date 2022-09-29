@@ -28,3 +28,9 @@
     color: #ffffff;
     border: none;
 }
+
+.package button:visited{
+  background-color: blue;
+    color: #ffffff;
+    border: none;
+}

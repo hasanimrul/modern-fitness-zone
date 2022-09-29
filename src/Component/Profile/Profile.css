@@ -1,5 +1,7 @@
 .profile{
     margin: 20px;
+    position: sticky;
+    top: 0;
 }
 .user-info{
     display: flex;
@@ -34,14 +36,18 @@
 .add-a-break{
     background-color: #000000;
     border-radius: 10px;
-    padding: 10px;
+    padding: 12px;
 }
 
 .add-a-break button{
     height: 50px;
     width: 50px;
     border-radius: 50px;
-    background-color: rgb(43, 42, 42);
+    background-color: #ffffff;
+}
+
+.add-a-break button:hover{
+    background-color: blue;
     color: #ffffff;
 }
 

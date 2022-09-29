@@ -2,6 +2,7 @@ import React from 'react';
 import './Package.css'
 
 const Package = (props) => {
+    const {handleSelectedPackages} = props
     const{picture, company, about, age, time} = props.package
     return (
         <div className='package'>
@@ -9,8 +10,8 @@ const Package = (props) => {
             <h4>Name: {company}</h4> <br></br>
             <p>{about}</p> <br></br>
             <p>For Age: {age}</p> <br></br>
-            <p>Time required: {time}</p> <br></br>
-            <button type="">Add to List</button>
+            <p>Time required: {time} minutes</p> <br></br>
+            <button onClick={() =>handleSelectedPackages(props.package)}>Add to List</button>
         </div>
     );
 };

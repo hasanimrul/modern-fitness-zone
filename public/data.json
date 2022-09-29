@@ -1,7 +1,7 @@
 [
     {
       "id": "63345cd845fd634b1262f8fe",
-      "time": "30 minutes",
+      "time": 30,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTROxFsfGs1OKHUCiwRxO-y4ktzzxeB1eM1Kw&usqp=CAU",
       "age": "31-40",
       "name": "Simone Medina",
@@ -10,7 +10,7 @@
     },
     {
       "id": "63345cd8ed55ddcf54626122",
-      "time": "20 minutes",
+      "time": 20,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL1ycjKsC0t9o8O-NmookwVZXJYigVmMObzA&usqp=CAU",
       "age": "24-30",
       "name": "Angelina Weber",
@@ -19,7 +19,7 @@
     },
     {
       "id": "63345cd806b9494f0dec4f2e",
-      "time": "40 minutes",
+      "time": 40,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Si9UJR0EBzrP8Xw6yipt9bBqMTaiYt1PiB8SZaUIScbISeLW2Ezl_dy1obD8EJNgbIA&usqp=CAU",
       "age": "21-29",
       "name": "Daphne Rodriguez",
@@ -28,7 +28,7 @@
     },
     {
       "id": "63345cd8ea90e01f41124da0",
-      "time": "29 minutes",
+      "time": 29,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-l9GMLUAmrJBpdG6SEecj589I1weCFCeycYWlR2rLwoNJYS4n5nmHEDQe3wVGP4VVB30&usqp=CAU",
       "age": "35-45",
       "name": "Lorna Peck",
@@ -37,7 +37,7 @@
     },
     {
       "id": "63345cd8b418895d1268da96",
-      "time": "23 minutes",
+      "time": 23,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7gjeqDwtBtpsQpGOLhZByVFEva4AEoOelZo9GIuSSIDmzZThNlIrl1Zo_BTbHOTXo7Wg&usqp=CAU",
       "age": "22-32",
       "name": "Beach Hickman",
@@ -46,7 +46,7 @@
     },
     {
       "id": "63345cd85bd602c2d56aa535",
-      "time": "35 minutes",
+      "time": 35,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIpPkbmKPag-uNks7zb_GtprerjWtNyUIVb__NYLvUTE7tklRz8M0Ex60ZGpHqbv_u3Uc&usqp=CAU",
       "age": "36-50",
       "name": "Rivers Holder",
