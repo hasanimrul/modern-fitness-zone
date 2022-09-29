@@ -2,13 +2,12 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import img from "../../images/img.png";
-import { getFromLs, storeInLS } from "../../utilities/fakedb";
 import "./Profile.css";
 
 const Profile = (props) => {
   const [breakTime, setBreakTime] = useState();
   const { cart } = props;
-  
+
   useEffect( () =>{
     const lsData = localStorage.getItem('break-time')
     setBreakTime(lsData)
